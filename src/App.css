@@ -77,7 +77,7 @@
   background-color: #f0f0f0;
   color: rgb(22, 166, 94);
   cursor: pointer;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 768px) {
@@ -320,6 +320,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background: rgba(86, 178, 128, 0.10);
 }
 
 .sectioncontent {
@@ -330,7 +331,8 @@ img {
 
 .sectioncontentcards {
   flex: 0 0 20%; 
-  margin-bottom: 15px;
+  margin-bottom: 15px;;
+  background-color: white;
 }
 .cardcontent {
   display: flex;
@@ -351,3 +353,65 @@ img {
 }
 
 
+
+
+
+.page-end {
+  background: var(--black, #272727);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  color: #E1E1E1;
+  cursor: pointer;
+}
+
+.logo-section img {
+  width: 100px;
+  height: 100px;
+}
+
+.logo-section p {
+  font-size: 14px;
+  color: #E1E1E1;
+  cursor: pointer;
+}
+
+.info-section {
+  display: flex;
+}
+
+.info-item {
+  margin-right: 20px;
+  text-align: center;
+}
+
+.info-item p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: rgb(22, 166, 94);
+  cursor: pointer;
+}
+
+.info-item h4 {
+  font-size: 18px;
+  color: #E1E1E1;
+  cursor: pointer;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-section,
+.logo-description {
+  color: #E1E1E1;
+  margin-bottom: 2px;
+  cursor: pointer;
+}

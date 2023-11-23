@@ -5,6 +5,8 @@ import HeaderContainer from './HeaderContainer.jsx'
 import Cards from './Cards.jsx'
 import Container  from './Container.jsx'
 import ContentCards from './ContentCards.jsx'
+import Footer from './Footer.jsx'
+import CardsFooter from './CardsFooter.jsx'
 import './App.css'
 
 
@@ -16,5 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 <Cards />
 <Container />
 <ContentCards />
+<CardsFooter />
+<Footer />
 </>
 )

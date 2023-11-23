@@ -1,40 +1,25 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
-import StarIcon from '@mui/icons-material/Star';
+import Typography from '@mui/material/Typography';
 
-const labels = {
-  0.5: 'Useless',
-  1: 'Useless+',
-  1.5: 'Poor',
-  2: 'Poor+',
-  2.5: 'Ok',
-  3: 'Ok+',
-  3.5: 'Good',
-  4: 'Good+',
-  4.5: 'Excellent',
-  5: 'Excellent+',
-};
-
-export default function TextRating() {
-  const value = 3.5;
+export default function BasicRating() {
+  const [value, setValue] = React.useState<number | null>(2);
 
   return (
     <Box
       sx={{
-        width: 200,
-        display: 'flex',
-        alignItems: 'center',
+        '& > legend': { mt: 2 },
       }}
     >
+      <Typography component="legend">Controlled</Typography>
       <Rating
-        name="text-feedback"
+        name="simple-controlled"
         value={value}
-        readOnly
-        precision={0.5}
-        emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
       />
-      <Box sx={{ ml: 2 }}>{labels[value]}</Box>
     </Box>
   );
 }
