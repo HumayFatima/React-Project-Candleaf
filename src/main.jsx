@@ -11,6 +11,7 @@ import './App.css'
 
 
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
 <>
 <Header />
@@ -20,5 +21,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 <ContentCards />
 <CardsFooter />
 <Footer />
+
 </>
 )
